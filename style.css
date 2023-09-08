@@ -1,14 +1,16 @@
 body{
-    background-color: beige;
+    background-color: rgb(117, 59, 45);
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
+    color: white;
 }
 h1{
     margin: 0;
+    text-shadow: 3px 3px 3px black;
 }
 .header, .footer{
     display: flex;
@@ -23,6 +25,9 @@ h1{
 .header{
     width: 300px;
 }
+.footer{
+    width: 400px;
+}
 
 .btn{
     width: 100px;
@@ -30,7 +35,7 @@ h1{
     font-size: 18px;
     color: black;
     font-weight: 500;
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 5px;
 }
 
@@ -53,17 +58,11 @@ h1{
 }
 
 .board{
+    background-color: white;
     display: grid;
     width: 500px;
     height: 500px;
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(230, 255, 2), 10px 10px 10px rgb(248, 0, 0), 15px 15px 15px rgb(1, 255, 39);
 }
-
-/* .square{
-    background-color: rgb(255, 247, 247); 
-    height: 5px; 
-    /* border: 1px solid black; 
-}
-.square:hover{
-    background-color: red;
-}  */
