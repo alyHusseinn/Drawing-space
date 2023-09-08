@@ -1,16 +1,18 @@
 body{
-    background-color: rgb(117, 59, 45);
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(242, 255, 0, 0.8), rgba(0,0,255,0) 70.71%);
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 h1{
     margin: 0;
-    text-shadow: 3px 3px 3px black;
+    text-shadow: 4px 4px 4px black;
 }
 .header, .footer{
     display: flex;
@@ -35,8 +37,15 @@ h1{
     font-size: 18px;
     color: black;
     font-weight: 500;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 5px;
+    transition: 100ms;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    opacity: 0.9;
 }
 
 .btn-select{
@@ -64,5 +73,5 @@ h1{
     height: 500px;
     border: 2px solid black;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px rgb(230, 255, 2), 10px 10px 10px rgb(248, 0, 0), 15px 15px 15px rgb(1, 255, 39);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0), 10px 10px 10px rgb(248, 0, 0), 15px 15px 15px rgb(1, 255, 39);
 }
